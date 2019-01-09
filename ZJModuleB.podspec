@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZJModuleB"
-  s.version      = "0.0.1"
+  s.version      = "1.0"
   s.summary      = "验证组件化"
 
   # This description is used to generate tags and improve search results.
@@ -24,11 +24,10 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-s.description  = <<-DESC
-LZTool 是一个用于保存一些常用工具类的工具
-DESC
+  s.description  = "LZTool 是一个用于保存一些常用工具类的工具"
 
-  s.homepage     = "https://github.com/successflowers/ZJModuleB.git"
+
+  s.homepage     = "https://github.com/successflowers/ZJModuleB"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -68,7 +67,7 @@ DESC
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "9.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -80,7 +79,7 @@ DESC
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/successflowers/ZJModuleB.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/successflowers/ZJModuleB.git", :tag => "1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +91,7 @@ DESC
   #
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +116,7 @@ DESC
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+   s.frameworks  = 'Foundation','UIKit'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -130,7 +129,7 @@ DESC
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
