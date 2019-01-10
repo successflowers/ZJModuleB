@@ -23,6 +23,12 @@
 #define QQ_ID @"1104796618"
 
 
+
+
+
+
+
+
 #pragma mark ------- JMessage  ----------
 
 #define JMessage_Appkey @"f4bb353825d2be3954a8ba00"          //用户端appkey
